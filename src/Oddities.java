@@ -9,7 +9,7 @@ public class Oddities {
     int cases = sc.nextInt();
     for (int i = 0; i < cases; i++) {
       int n = sc.nextInt();
-      String s = (n % 2 == 0) ? "even" : "odd;";
+      String s = (n % 2 == 0) ? "even" : "odd";
       System.out.printf("%d is %s%n", n, s);
     }
   }
