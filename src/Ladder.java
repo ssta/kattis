@@ -10,8 +10,8 @@ public class Ladder {
     int h = sc.nextInt();
     int v = sc.nextInt();
     double vr = Math.PI * v / 180.0;
-    // sin x = O/H
-    // H=O/sin x
+    // sin xc = O/H
+    // H=O/sin xc
     System.out.println((int) Math.ceil(h / Math.sin(vr)));
   }
 }
