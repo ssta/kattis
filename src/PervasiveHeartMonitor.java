@@ -15,12 +15,12 @@ public class PervasiveHeartMonitor {
       String[] parts = line.split(" ");
       List<Double> rates = new ArrayList<>();
       List<String> names = new ArrayList<>();
-      for (int i = 0; i < parts.length; i++) {
+      for (String part : parts) {
         // hate using exceptions like this!
         try {
-          rates.add(Double.parseDouble(parts[i]));
+          rates.add(Double.parseDouble(part));
         } catch (NumberFormatException nfe) {
-          names.add(parts[i]);
+          names.add(part);
         }
       }
       double average = average(rates);
