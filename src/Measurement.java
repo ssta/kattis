@@ -20,7 +20,7 @@ public class Measurement {
     System.out.printf("%.10f", answer);
   }
 
-  static enum Unit {
+  enum Unit {
     /* Conversion factors (all in thou) */
     THOU(1L),
     TH(1L),
@@ -39,7 +39,7 @@ public class Measurement {
     LEAGUE(MI.factor * 3),
     LEA(MI.factor * 3);
 
-    long factor;
+    final long factor;
 
     Unit(long factor) { this.factor = factor;}
   }

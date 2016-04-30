@@ -6,6 +6,10 @@ import java.util.Scanner;
 /**
  * Created by ssta on 21/04/16.
  */
+// some arsehole at Sun decided to deprecate getYear(), which I guess is fair enough, but there just is no other way to do it with Date and I'm not
+// going
+// to construct a Calendar just to get the year, so ignore the warning...
+@SuppressWarnings("deprecation")
 public class Eligibility {
   public static void main(String[] args) throws ParseException {
     SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd");

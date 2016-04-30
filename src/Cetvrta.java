@@ -16,11 +16,7 @@ public class Cetvrta {
       if (xmap.containsKey(x)) { xmap.put(x, 2); } else { xmap.put(x, 1);}
       if (ymap.containsKey(y)) { ymap.put(y, 2); } else { ymap.put(y, 1);}
     }
-    xmap.keySet().stream().filter(k -> xmap.get(k) == 1).forEach(k -> {
-      System.out.printf("%d ", k);
-    });
-    ymap.keySet().stream().filter(k -> ymap.get(k) == 1).forEach(k -> {
-      System.out.printf("%d\n", k);
-    });
+    xmap.keySet().stream().filter(k -> xmap.get(k) == 1).forEach(k -> System.out.printf("%d ", k));
+    ymap.keySet().stream().filter(k -> ymap.get(k) == 1).forEach(k -> System.out.printf("%d\n", k));
   }
 }

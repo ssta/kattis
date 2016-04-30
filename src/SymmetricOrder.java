@@ -18,7 +18,7 @@ public class SymmetricOrder {
       for (int i = 0; i < n; i++) {
         l.add(sc.next());
       }
-      String[] strings = l.toArray(new String[0]);
+      String[] strings = l.toArray(new String[l.size()]);
       symPrint(strings);
     }
 

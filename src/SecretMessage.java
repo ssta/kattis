@@ -28,10 +28,10 @@ public class SecretMessage {
       chars = rotateMatrix(chars);
       // output
       StringBuilder sb = new StringBuilder();
-      for (int c = 0; c < chars.length; c++) {
+      for (char[] aChar : chars) {
         for (int r = 0; r < chars.length; r++) {
-          if (chars[c][r] != '*') {
-            sb.append(chars[c][r]);
+          if (aChar[r] != '*') {
+            sb.append(aChar[r]);
           }
         }
       }
